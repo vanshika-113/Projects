@@ -7,7 +7,7 @@ app.use(cors());
 app.use(express.json());
 
 // 🔗 MongoDB connection
-mongoose.connect("mongodb+srv://vvanshika_be23:Vanshika05@cluster0.ipltqge.mongodb.net/artgallery")
+mongoose.connect("MONGO_URI_HIDDEN");
 .then(() => console.log("MongoDB Connected"))
 .catch(err => console.log(err));
 
