@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Test Image URLs</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; }
+        .image-test { margin: 20px 0; }
+        .image-test img { max-width: 400px; max-height: 300px; border: 1px solid #ccc; }
+        .status { font-weight: bold; }
+        .error { color: red; }
+        .success { color: green; }
+    </style>
+</head>
+<body>
+    <h1>Testing Image URLs</h1>
+    
+    <div class="image-test">
+        <h3>URL 1: Sunset Dreams</h3>
+        <img src="https://images.unsplash.com/photo-1541961017774-22349e4a1262?w=400&h=300&fit=crop" 
+             onload="this.nextElementSibling.className='status success'; this.nextElementSibling.textContent='✓ Loaded successfully'"
+             onerror="this.nextElementSibling.className='status error'; this.nextElementSibling.textContent='✗ Failed to load'">
+        <div class="status">Loading...</div>
+    </div>
+    
+    <div class="image-test">
+        <h3>URL 2: Digital Dreams</h3>
+        <img src="https://images.unsplash.com/photo-1518709268805-4e9042af2176?w=400&h=300&fit=crop" 
+             onload="this.nextElementSibling.className='status success'; this.nextElementSibling.textContent='✓ Loaded successfully'"
+             onerror="this.nextElementSibling.className='status error'; this.nextElementSibling.textContent='✗ Failed to load'">
+        <div class="status">Loading...</div>
+    </div>
+    
+    <div class="image-test">
+        <h3>URL 3: Urban Photography</h3>
+        <img src="https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=400&h=300&fit=crop" 
+             onload="this.nextElementSibling.className='status success'; this.nextElementSibling.textContent='✓ Loaded successfully'"
+             onerror="this.nextElementSibling.className='status error'; this.nextElementSibling.textContent='✗ Failed to load'">
+        <div class="status">Loading...</div>
+    </div>
+    
+    <div class="image-test">
+        <h3>URL 4: Abstract Sculpture</h3>
+        <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400&h=300&fit=crop" 
+             onload="this.nextElementSibling.className='status success'; this.nextElementSibling.textContent='✓ Loaded successfully'"
+             onerror="this.nextElementSibling.className='status error'; this.nextElementSibling.textContent='✗ Failed to load'">
+        <div class="status">Loading...</div>
+    </div>
+</body>
+</html>
